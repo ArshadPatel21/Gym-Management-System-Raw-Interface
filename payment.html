@@ -1,0 +1,196 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Management System - User Interface</title>
+  
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    /* Internal CSS for additional styling */
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Arial', sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    header .logo h1 {
+      color: white;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .welcome-text h2 {
+      color: #333;
+    }
+
+    .btn-custom {
+      background-color: #28a745;
+      color: white;
+      border-radius: 5px;
+    }
+
+    .btn-custom:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Header Section -->
+  <header>
+    <div class="container d-flex align-content-center justify-content-between">
+      <div class="logo">
+        <h1>GymPro</h1>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="class-schedule.html" class="nav-link">Class Schedule</a></li>
+          <li><a href="profile.html" class="nav-link">Profile</a></li>
+          <li><a href="book-class.html" class="nav-link">Book Class</a></li>
+          <li><a href="payment.html" class="nav-link">Payment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Payment Form Section -->
+  <section id="payment">
+    <div class="container">
+      <h2>Make Payment</h2>
+      <form action="#" method="POST" id="payment-form">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" value="50" disabled>
+
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" placeholder="**** **** **** ****" required>
+
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="month" id="expiry-date" name="expiry-date" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" placeholder="***" required>
+
+        <button type="submit">Pay Now</button>
+      </form>
+    </div>
+  </section>
+<style>
+  #payment {
+  background-color: #ffffff;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+#payment h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+#payment-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+#payment-form input[type="number"],
+#payment-form input[type="text"],
+#payment-form input[type="month"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+#payment-form input:focus {
+  border-color: #28a745;
+  outline: none;
+  background-color: #fff;
+}
+
+#payment-form input[disabled] {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+#payment-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#payment-form button:hover {
+  background-color: #218838;
+}
+
+</style>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 GymPro. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="3.js"></script>
+</body>
+</html>
